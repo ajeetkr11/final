@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy New Year, Twinkle 💖</title>
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="welcome-body">
+  <div class="stars"></div>
+
+  <main class="welcome-card">
+    <h1 class="title">Happy New Year, Twinkle 💖</h1>
+    <p class="subtitle">Tap to enter our little universe</p>
+
+    <div class="handhold-illustration" aria-hidden="true">
+      <!-- Minimal inline illustration (optional). Replace with your own image if you prefer -->
+      <svg viewBox="0 0 200 80" role="img">
+        <path d="M10,60 C30,40 50,40 70,60" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"/>
+        <path d="M130,60 C150,40 170,40 190,60" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="70" cy="60" r="8" fill="var(--accent)"/>
+        <circle cx="130" cy="60" r="8" fill="var(--accent)"/>
+      </svg>
+      <p class="tiny-note">Two hands, one promise.</p>
+    </div>
+
+    <button class="enter-btn" id="enterBtn">Enter</button>
+  </main>
+
+  <script>
+    // Navigate on user gesture (helps audio play later on next page)
+    document.getElementById('enterBtn').addEventListener('click', () => {
+      window.location.href = 'celebration.html';
+    });
+  </script>
+</body>
+</html>
+<div class="handhold-illustration">
+  <img src="couple.png" alt="Two women holding hands" style="width:100%; border-radius:12px;" />
+  <p class="tiny-note">Two hands, one promise.</p>
+</div>
